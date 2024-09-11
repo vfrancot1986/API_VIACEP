@@ -1,0 +1,301 @@
+{
+	"id": "e944a5b1-ccab-4089-a6b4-02d591198f08",
+	"name": "VIACEP",
+	"timestamp": "2024-09-11T18:46:06.410Z",
+	"collection_id": "2659129-34b9e8bd-f98a-4ae5-b799-324a87c411bb",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-11T18:46:02.472Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "621bc622-9109-46bf-9988-edf50c370201",
+			"name": "Validacao_CEP_Json",
+			"url": "https://viacep.com.br/ws/83326130/json",
+			"time": 443,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				443
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "aa092cf0-00ab-48f6-bbb4-76c3b563ebfb",
+			"name": "Validacao_CEP_XML",
+			"url": "https://viacep.com.br/ws/83326130/xml",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				138
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "9c5ec593-5d34-4279-b276-8d6813350ff9",
+			"name": "Validacao_CEP_Inexistente",
+			"url": "https://viacep.com.br/ws/00000000/json",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				142
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "53eb3af2-0dab-45ba-8b66-c8fa4769706b",
+			"name": "Validacao_CEP_Invalido",
+			"url": "https://viacep.com.br/ws/95010A10/json",
+			"time": 138,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				138
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "5d979002-7eac-4c02-b82b-777e10bc2bd6",
+			"name": "Pesquisa_CEP_Json",
+			"url": "https://viacep.com.br/ws/PR/Curitiba/Carlota+Straube/json",
+			"time": 394,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				394
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "3ee2cc74-927c-4dd6-98d0-17448974665e",
+			"name": "Pesquisa_CEP_XML",
+			"url": "https://viacep.com.br/ws/PR/Curitiba/Carlota+Straube/XML",
+			"time": 143,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				143
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "69e21fd0-4a88-43b9-956a-8728a76fb8b2",
+			"name": "Pesquisa_CEP_End_Invalido_Logradouro",
+			"url": "https://viacep.com.br/ws/PR/Curitiba/json",
+			"time": 408,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				408
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "c231fdb0-c93e-44ca-9192-f987ab02de3b",
+			"name": "Pesquisa_CEP_End_Invalido_Cidade",
+			"url": "https://viacep.com.br/ws/PR/Carlota+Straube/json",
+			"time": 404,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				404
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		},
+		{
+			"id": "792e2384-7abf-4969-b5be-9be56c459956",
+			"name": "Pesquisa_CEP_End_Invalido_Estado",
+			"url": "https://viacep.com.br/ws/Curitiba/Carlota+Straube/json",
+			"time": 411,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Successful request": true
+			},
+			"testPassFailCounts": {
+				"Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				411
+			],
+			"allTests": [
+				{
+					"Successful request": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2621,
+	"collection": {
+		"requests": [
+			{
+				"id": "621bc622-9109-46bf-9988-edf50c370201",
+				"method": "GET"
+			},
+			{
+				"id": "aa092cf0-00ab-48f6-bbb4-76c3b563ebfb",
+				"method": "GET"
+			},
+			{
+				"id": "9c5ec593-5d34-4279-b276-8d6813350ff9",
+				"method": "GET"
+			},
+			{
+				"id": "53eb3af2-0dab-45ba-8b66-c8fa4769706b",
+				"method": "GET"
+			},
+			{
+				"id": "5d979002-7eac-4c02-b82b-777e10bc2bd6",
+				"method": "GET"
+			},
+			{
+				"id": "3ee2cc74-927c-4dd6-98d0-17448974665e",
+				"method": "GET"
+			},
+			{
+				"id": "69e21fd0-4a88-43b9-956a-8728a76fb8b2",
+				"method": "GET"
+			},
+			{
+				"id": "c231fdb0-c93e-44ca-9192-f987ab02de3b",
+				"method": "GET"
+			},
+			{
+				"id": "792e2384-7abf-4969-b5be-9be56c459956",
+				"method": "GET"
+			}
+		]
+	}
+}
